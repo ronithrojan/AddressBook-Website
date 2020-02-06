@@ -1,0 +1,107 @@
+/* Universal Styles */
+
+body {
+  background-image: url("Background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: "Maven Pro", sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.contacts-card {
+  border-radius: 5px;
+  background-color: rgba (225, 255, 255, 0.8);
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.contact_title {
+  color: #fff;
+}
+
+.contact_form {
+  border-radius: 5px;
+  background-color: rgba(179, 178, 176, 0.6);
+  margin: 10px auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.contact-form-input {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.name {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  margin: 0;
+}
+
+.contact_Add {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  width: 100%;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+label {
+  width: 100%;
+}
+
+.contact-Add {
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+}
+
+#contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 10px;
+}
+
+.contact-box {
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+.fa-trash {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  color: red;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(50%, 50%);
+}
