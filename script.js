@@ -72,13 +72,13 @@ form.addEventListener("submit", event => {
 let removeTrash = document.createElement("#contact-cards");
 removeTrash.remove();
 
-// removeEventListener("click", function() {
-//   removeAdd.addEventListener("click", () => {
-//     const myAddressBook = document.querySelectorAll("#contact-cards");
-//     //need loop to seat every element
-//     for (let contact of myContacts) {
-//       this.contacts.myAddressBook.remove();
-//     }
-//   });
-// });
-// display();
+removeEventListener("click", function() {
+  removeAdd.addEventListener("click", () => {
+    const myAddressBook = document.querySelectorAll("#contact-cards");
+    //need loop to seat every element
+    for (let contact of myContacts) {
+      this.contacts.myAddressBook.remove();
+    }
+  });
+});
+display();
