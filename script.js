@@ -55,6 +55,11 @@ function display() {
 
 display();
 
+// Another Method is using the "for of" loop
+// counter = 0;
+// for (let contact of addressBook.contacts)
+// counter++;
+
 const form = document.querySelector("form");
 form.addEventListener("submit", event => {
   event.preventDefault();
@@ -69,16 +74,15 @@ form.addEventListener("submit", event => {
   display();
 });
 
-let removeTrash = document.createElement("#contact-cards");
-removeTrash.remove();
+document
+  .querySelector("#contact-cards")
+  .addEventListener("click", deleteContact);
 
-removeEventListener("click", function() {
-  removeAdd.addEventListener("click", () => {
-    const myAddressBook = document.querySelectorAll("#contact-cards");
-    //need loop to seat every element
-    for (let contact of myContacts) {
-      this.contacts.myAddressBook.remove();
-    }
-  });
-});
-display();
+function deleteContact(e) {
+  if (e.target.classList.contains("fa-trash")) {
+    const index = e.target.getAttribute("data-index-number");
+    console.log(index);
+    myAddressBook.deleteAt(index);
+    display();
+  }
+}
